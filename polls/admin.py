@@ -7,7 +7,7 @@ class JOJKO(admin.ModelAdmin):
             'pub_date',
             'choices_count')
     def choices_count(self, obj):
-        return obj.qqs.count()
+        return obj.choice_set.count()
 
 
 
